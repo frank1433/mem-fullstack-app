@@ -4,7 +4,7 @@ import { Link, useHistory, useLocation } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import decode from "jwt-decode";
 import useStyles from "./styles";
-import memories from "../../images/memories.png";
+import vocations from "../../images/vacation.jpg";
 
 const Navbar = () => {
   const classes = useStyles();
@@ -37,9 +37,9 @@ const Navbar = () => {
           variant="h2"
           align="center"
         >
-          Memories
+          Vacation Experiences
         </Typography>
-        <img className={classes.image} src={memories} alt="icon" height="60" />
+        <img className={classes.image} src={vocations} alt="icon" height="60" />
       </div>
       <Toolbar className={classes.toolbar}>
         {user ? (
